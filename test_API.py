@@ -20,10 +20,13 @@ chat_completion = client.chat.completions.create(
     messages=[
         {
             "role": "user",
-            "content": "Explain the importance of fast language models ในภาษาไทย",
+            "content": "Explain the importance o"
+            "f fast language models ในภาษาไทย",
         }
     ],
     model="llama-3.3-70b-versatile",
+    temperature=0.7,
+    max_tokens=1024,
 )
 
 # Print the response from the chat completion
